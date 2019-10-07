@@ -1,6 +1,8 @@
 # TkTetris by Matthew Ponce de Leon
 
-# Adapted from Tetris For Intro/Intermediate programmers tutorial by
+# Adapted from the Animation Starter Code at 
+# http://www.cs.cmu.edu/~112n18/notes/notes-animations-part2.html,
+# and the Tetris For Intro/Intermediate Programmers tutorial by
 # David Kosbie at https://www.cs.cmu.edu/~112n18/notes/notes-tetris/index.html
 
 from tkinter import *
@@ -329,6 +331,7 @@ def run(width=300, height=300):
     data.height = height
     data.timerDelay = 750 # milliseconds
     root = Tk()
+    root.title("TkTetris") # Window title
     init(data)
     # create the root and the canvas
     canvas = Canvas(root, width=data.width, height=data.height)
